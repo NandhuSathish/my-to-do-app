@@ -1,0 +1,248 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left bottom, right top, from(#4b56e3), to(#d253fd));
+  background: linear-gradient(to right top, #4b56e3, #d253fd);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.2)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
+  border-radius: 2rem;
+  z-index: 5;
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.circle {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  background: white;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.2)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.2));
+  position: absolute;
+  z-index: 1;
+}
+
+.circle-1 {
+  bottom: 0%;
+  left: 10%;
+}
+
+.circle-2 {
+  top: -10%;
+  right: 7%;
+}
+
+.dashboard {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.2)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
+}
+
+.avatar {
+  text-align: center;
+}
+
+.avatar h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.lists h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.quote {
+  width: 80%;
+  margin: 0 1rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(44, 43, 43, 0.438)), to(rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(to right bottom, rgba(44, 43, 43, 0.438), rgba(255, 255, 255, 0.5));
+  padding: 3rem 3rem;
+  border-radius: 2.5rem;
+  font-style: italic;
+}
+
+.quote span {
+  font-size: 2rem;
+}
+
+.todos {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin: 5rem;
+}
+
+.todos h1 {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 0.8rem;
+  color: #4b55e3bd;
+}
+
+.add-todo {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.2)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 3.5rem;
+  font-size: medium;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.add-todo form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add-todo input {
+  border: none;
+  background: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 1rem;
+  padding: 0.5rem 0;
+  font-size: medium;
+  font-weight: 400;
+}
+
+.add-todo input:focus {
+  outline: none;
+}
+
+.add-todo button {
+  border: none;
+  background: #4b55e3bd;
+  color: white;
+  padding: 0.7rem 1rem;
+}
+
+.todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.2)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
+  border-radius: 0.5rem;
+  overflow: hidden;
+  font-size: medium;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.todo li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 1rem;
+}
+
+.todo button {
+  border: none;
+  background: #4b55e3bd;
+  color: white;
+  margin-left: 0.2rem;
+  padding: 0.7rem 1rem;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.todo button:hover {
+  background: white;
+  color: #4b55e3bd;
+}
+
+.todo .fa-trash,
+.todo .fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.fall {
+  -webkit-transform: translateY(8rem) rotateZ(20deg);
+          transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+/*# sourceMappingURL=style.css.map */
